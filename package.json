@@ -1,17 +1,16 @@
 {
-  "name": "assignment7",
+  "name": "music-orm-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "Music library API with Express + Sequelize + SQLite",
+  "main": "server.js",
   "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "db:setup": "node database/setup.js",
+    "db:seed": "node database/seed.js"
+  },
   "dependencies": {
-    "dotenv": "^17.1.0",
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
     "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7"
